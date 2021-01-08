@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/* SECTION */
+
+section .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #007F2D;
+  clip-path: circle(65% at right -20%);
+}
+
+/* NAVBAR */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  position: relative;
+  max-width: 200px;
+}
+
+header .navigation {
+  display: flex;
+  position: relative;
+}
+
+header .navigation li {
+  list-style: none;
+}
+
+header .navigation li a {
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  text-decoration: none;
+  font-weight: 500px;
+  margin-left: 40px;
+}
+
+/* CONTENT */
+
+.content {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+  margin-left: 110px;
+}
+
+.content .textBox h2 {
+  color: #E30613;
+  font-size: 3em;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  font-weight: 700;
+
+}
+
+.content .textBox p {
+  color: #BDBCBC;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  background: #007F2D;
+  color: white;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.social {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  margin-left: 20px;
+  background: #E30613;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.social li a:hover {
+  background: #007F2D;
+  transition: translateY(-10px);
+}
+
+.social li img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
+
+/*SLIDER */
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 380px;
+  height: 785px;
+  display: flex;
+  justify-content: center;
+}
+
+/* IMG BOX */
+.content .imgBox {
+
+  display: flex;
+  width: 500px;
+  justify-content: flex-end;
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container-flex {
+        flex-direction: column;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .container-flex {
+        flex-direction: column;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .container-flex {
+        flex-direction: column;
+    }
+    
+  }
